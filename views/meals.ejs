@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <h1>На вечерю : <%= mealTitle%></h1>
+    <h1>Спати треба йти?</h1>
+    <% if(age<6) { %>
+    <h2>Спати о 19 годині з казкою</h2>
+    <%} else if(age<21) {%>
+    <h2>Cпати після 12</h2>
+    <%} else {%> Сон нам тільки сниться <%}%>
+    <hr />
+    <ul>
+      <% for(let wish of wishes){ %>
+      <li><%=wish%></li>
+      <%}%>
+    </ul>
+  </body>
+</html>
